@@ -1,0 +1,90 @@
+.education-section {
+  min-height: 100vh;
+  padding: 100px 20px;
+  background: #0a0a0f;
+  color: white;
+  text-align: center;
+}
+
+.education-title {
+  font-size: 48px;
+  color: #4c8bff;
+  margin-bottom: 10px;
+}
+
+.education-subtitle {
+  color: #cfcfcf;
+  margin-bottom: 60px;
+  font-size: 18px;
+}
+
+/* Timeline container */
+.education-timeline {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+}
+
+/* Timeline line */
+.education-timeline::before {
+  content: "";
+  position: absolute;
+  left: 25px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: #4c8bff50;
+}
+
+/* Card */
+.edu-card {
+  display: flex;
+  gap: 20px;
+  background: #111122;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 0 25px rgba(76, 139, 255, 0.15);
+  transition: 0.3s;
+}
+
+.edu-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 30px #4c8bff;
+}
+
+/* Icon */
+.edu-icon {
+  width: 50px;
+  height: 50px;
+  background: #4c8bff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: white;
+  flex-shrink: 0;
+}
+
+/* Content */
+.edu-content {
+  text-align: left;
+}
+
+.edu-content h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.edu-year {
+  font-size: 14px;
+  color: #9bbcff;
+}
+
+.edu-content p {
+  margin-top: 6px;
+  color: #d0d0d0;
+}

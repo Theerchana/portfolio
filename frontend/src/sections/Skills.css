@@ -1,0 +1,93 @@
+.skills-section {
+  min-height: 100vh;               /* Full page height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;             /* Horizontal center */
+  justify-content: center;         /* Vertical center */
+  background: #0A0A0F;             /* Dark theme */
+  padding-top: 80px;               /* Space below navbar */
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
+}
+
+.skills-title {
+  font-size: 50px;
+  font-weight: 700;
+  color: #4c8bff;                  /* Light blue */
+  margin-bottom: 10px;
+  padding-bottom: 80px;   
+}
+
+.skills-subtitle {
+  font-size: 20px;
+  color: #cfcfcf;
+  margin-bottom: 40px;
+}
+
+/* GRID – unchanged */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 30px;
+  width: 80%;
+  max-width: 900px;
+}
+
+/* CARD */
+.skill-card {
+  background: #170238;
+  padding: 22px 20px;
+  border-radius: 12px;
+  border: 2px solid #1b1b2f;
+  transition: 0.3s ease;
+  box-shadow: 0 0 20px rgba(60, 60, 255, 0.15);
+
+  display: flex;                  /* 👈 only for icon + text */
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Hover */
+.skill-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px #4c8bff;
+  border-color: #4c8bff;
+}
+
+/* LOGO */
+.skill-card img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  margin-bottom: 12px;
+  filter: drop-shadow(0 0 6px rgba(76, 139, 255, 0.6));
+}
+
+/* SKILL NAME */
+.skill-card span {
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.skills-wrapper {
+  display: flex;              /* horizontal layout */
+  gap: 30px;
+  justify-content: center;    /* center horizontally */
+  align-items: center;
+  flex-wrap: wrap;            /* wrap to next line on small screens */
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 40px;
+}
+.skills-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.center-row {
+  justify-content: center;
+}
+
