@@ -55,7 +55,7 @@ const Hero = () => {
           {/* RESUME BUTTON */}
           <button
             className="resume-btn"
-            onClick={() => window.open("/resume.pdf", "_blank")}
+            onClick={() => window.open("/resume updated.pdf", "_blank")}
           >
             View Resume
           </button>
@@ -68,7 +68,7 @@ const Hero = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
         >
-          <img src="/myphoto.jpg" alt="profile" />
+          <img src="/myphoto.jpeg" alt="profile" />
 
         </motion.div>
 
